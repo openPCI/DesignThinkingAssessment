@@ -1,5 +1,5 @@
 # Design Thinking Assessment Modules
-Four performance assessment modules developed for the Game Based Learning in the 21st Century (GBL21) and Community Drive (CD) research projects.
+Four performance assessment modules developed for the [**Game Based Learning in the 21st Century (GBL21)**](https://gbl21.aau.dk/) and [**Community Drive (CD)**](https://www.communitydrive.aau.dk/) research projects.
 
 The package consists of four modules and a tutorial. Download the zip file (English or Danish) and import into your instance of [TAO Assessment Platform (free open source community version)](https://www.taotesting.com/products/core/#download).
 
