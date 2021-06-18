@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i1534323659649152" title="Museum 4" label="6.1. Lån af genstand" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
+    <mapping defaultValue="0" upperBound="5">
+      <mapEntry mapKey="mail1 begejstret" mappedValue="1"/>
+      <mapEntry mapKey="mail2 irriteret" mappedValue="1"/>
+      <mapEntry mapKey="mail3 bange" mappedValue="1"/>
+      <mapEntry mapKey="mail2 forvirret" mappedValue="1"/>
+      <mapEntry mapKey="mail3 vred" mappedValue="1"/>
+      <mapEntry mapKey="mail4 stolt" mappedValue="1"/>
+      <mapEntry mapKey="choice_6 choice_4" mappedValue="1"/>
+      <mapEntry mapKey="choice_1 choice_4" mappedValue="1"/>
+      <mapEntry mapKey="choice_2 choice_7" mappedValue="1"/>
+      <mapEntry mapKey="choice_2 choice_14" mappedValue="1"/>
+      <mapEntry mapKey="choice_5 choice_13" mappedValue="1"/>
+      <mapEntry mapKey="choice_5 choice_8" mappedValue="1"/>
+      <mapEntry mapKey="choice_1 choice_10" mappedValue="1"/>
+      <mapEntry mapKey="choice_6 choice_3" mappedValue="2"/>
+      <mapEntry mapKey="mail4 begejstret" mappedValue="0"/>
+      <mapEntry mapKey="mail4 smigret" mappedValue="1"/>
+      <mapEntry mapKey="mail1 taknemmelig" mappedValue="1"/>
+      <mapEntry mapKey="mail1 glad" mappedValue="1"/>
+      <mapEntry mapKey="mail1 tilfreds" mappedValue="1"/>
+      <mapEntry mapKey="mail4 rastloes" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="RESPONSE_4" cardinality="single" baseType="identifier"/>
+  <responseDeclaration identifier="RESPONSE_5" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>En samler i Nordjylland har en masse vikingeting. Hun har blandt andet en vikingeøkse. Den vil du meget gerne låne til udstillingen. Du har skrevet 4 udkast til en mail. Du skal vurdere, hvordan samleren vil tage imod hver mail.</h4>
+        <h6>Du skal vælge den følelse, der passer til hver mail.<br/>
+Vælg til sidst, hvilken mail du synes vil være dårligst. Begrund dit valg.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <matchInteraction responseIdentifier="RESPONSE" shuffle="true" maxAssociations="0" minAssociations="0">
+          <prompt/>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="mail1" fixed="true" showHide="show" matchMax="1" matchMin="0">Mail 1:<br/>
+Hej, Runehøjs historiske museum laver en udstilling om vikingetiden til skoleelever. Vi vil meget gerne låne din vikingeøkse til udstillingen. Så får du mulighed for at dele din interesse for vikingetiden med en masse unge mennesker.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="mail2" fixed="true" showHide="show" matchMax="1" matchMin="0">Mail 2:<br/>
+Hej. Vi skal låne din vikingehjelm, kan vi komme og hente den på et tidspunkt?</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="mail3" fixed="true" showHide="show" matchMax="1" matchMin="0">Mail 3:<br/>
+Hej. Vi vil gerne låne din vikingehjelm til en af vores udstillinger. Vi håber, du udlåner den frivilligt, ellers vil vores advokater finde et argument for, at du som privat samler er nødt til at udlevere til nationale museer, når de beder om det.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="mail4" fixed="true" showHide="show" matchMax="1" matchMin="0">Mail 4:<br/>
+Hej. Runehøjs museum er rigtig glade for, at du med din store kundskab om vikingetiden har indsamlet værdifulde genstande fra Norden. Vi håber, at du vil dele din viden med kommunens skoleelever ved at udlåne din vikingehjelm til vores udstilling.</simpleAssociableChoice>
+          </simpleMatchSet>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="stolt" fixed="false" showHide="show" matchMax="0" matchMin="0">Stolt</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="begejstret" fixed="false" showHide="show" matchMax="0" matchMin="0">Begejstret</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="irriteret" fixed="false" showHide="show" matchMax="0" matchMin="0">Irriteret</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="vred" fixed="false" showHide="show" matchMax="0" matchMin="0">Vred</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="taknemmelig" fixed="false" showHide="show" matchMax="0" matchMin="0">Taknemmelig</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="flov" fixed="false" showHide="show" matchMax="0" matchMin="0">Flov</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="misundelig" fixed="false" showHide="show" matchMax="0" matchMin="0">Misundelig</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="bange" fixed="false" showHide="show" matchMax="0" matchMin="0">Bange</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="forvirret" fixed="false" showHide="show" matchMax="0" matchMin="0">Forvirret</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="smigret" fixed="false" showHide="show" matchMax="0" matchMin="0">Smigret</simpleAssociableChoice>
+          </simpleMatchSet>
+        </matchInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <h6>Hvilken mail synes du er dårligst?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_4" shuffle="false" maxChoices="1" minChoices="0" orientation="horizontal">
+          <simpleChoice identifier="choice_24" fixed="false" showHide="show">Mail 1</simpleChoice>
+          <simpleChoice identifier="choice_25" fixed="false" showHide="show">Mail 2</simpleChoice>
+          <simpleChoice identifier="choice_26" fixed="false" showHide="show">Mail 3</simpleChoice>
+          <simpleChoice identifier="choice_27" fixed="false" showHide="show">Mail 4</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <h6>Hvorfor synes du, den mail er dårligst?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <extendedTextInteraction responseIdentifier="RESPONSE_5" base="10" minStrings="0" format="plain">
+    </extendedTextInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE_4"/>
+          <correct identifier="RESPONSE_4"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE_5"/>
+          <correct identifier="RESPONSE_5"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

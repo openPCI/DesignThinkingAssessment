@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15381242705282271" title="6. Schedule for the opening party" label="7. Schedule for opening party" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>The board of directors have now chosen the activities, that are going to be a part of the opening party. You have to create a schedule for the party.</h4>
+        <h6>Make the schedule by clicking on the squares by every activity. A square is equivalent to 30 minutes. You have to think about the order of the activities, how long they will take and which activities can occur at the same time. </h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="gantt" hook="gantt/runtime/gantt.amd.js" version="0.1.21">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+                <lib id="gantt/runtime/ganttjs/gantt"/>
+              </libraries>
+              <stylesheets>
+                <link href="gantt/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="gantt/runtime/css/gantt.css" type="text/css" title="gantt"/>
+                <link href="gantt/runtime/ganttjs/ganttjs.css" type="text/css" title="ganttjs"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="gantt/runtime/assets/download.png" type="image/png"/>
+                <file src="gantt/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="period">1</property>
+              <property key="weekDays"></property>
+              <property key="months"></property>
+              <property key="disableWeekends"></property>
+              <property key="startDate"></property>
+              <property key="useHours"></property>
+              <property key="useHalfHours">true</property>
+              <property key="dayStart">16</property>
+              <property key="dayEnd">21</property>
+              <property key="tasks">Entrance opens;#F00
+Finishing firework show;#00f
+Musical entertainment for adults;#008000
+Cirkus parade through the park;#20B2AA
+Dinner buffet;#A0522D
+Clown show for kids;#9370DB
+The rides are open;#FFD700</property>
+              <property key="showTimeRange"></property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="gantt">
+    
+</div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

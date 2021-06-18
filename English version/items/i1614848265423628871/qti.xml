@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15354446112714131" title="10. An actor quits" label="10. An actor quits" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_7" mappedValue="0"/>
+      <mapEntry mapKey="choice_8" mappedValue="0"/>
+      <mapEntry mapKey="choice_1" mappedValue="0"/>
+      <mapEntry mapKey="choice_2" mappedValue="1"/>
+      <mapEntry mapKey="choice_3" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="RESPONSE_1" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[choice_10]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_5" mappedValue="0"/>
+      <mapEntry mapKey="choice_6" mappedValue="1"/>
+      <mapEntry mapKey="choice_4" mappedValue="0"/>
+      <mapEntry mapKey="choice_9" mappedValue="0"/>
+      <mapEntry mapKey="choice_10" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="2"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>2</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Margaret has to play the queen, but she has suddenly decided to quit. You ask her why, and she shows you a text from Edith. She is one of the other actors.<br/>
+<img src="teateropg10.png" alt="teateropg10" width="71%"/>Hi margaret. I promised to say that all actors have  to meet at 1 at the scene tomorrow. The director has something they want to say. Remember that! It can't be true that others have to remind you of such things all the time. Many of us have talked about that for a long time. Regards, Edith.</h4>
+        <h6>What is it about the text message that makes Margaret quit?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1" minChoices="0" orientation="vertical">
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">Margaret is tired of having to come into the meeting.</simpleChoice>
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">Margaret feels that she is alone.</simpleChoice>
+          <simpleChoice identifier="choice_3" fixed="false" showHide="show">Margaret feels that the others talk behind her back.</simpleChoice>
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Margaret thinks that Edith wants her part in the play.</simpleChoice>
+          <simpleChoice identifier="choice_8" fixed="false" showHide="show">Margaret feels way too good to work with someone like Edith</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <h6>Why do you think that Edith sent such a message to Margaret?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="true" maxChoices="1" minChoices="0" orientation="vertical">
+          <simpleChoice identifier="choice_4" fixed="false" showHide="show">Edith wants to help Margaret feel more happy.</simpleChoice>
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Edith hopes that Margaret will get mad and quit.</simpleChoice>
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Edith is tired of Margaret not showing up on time.</simpleChoice>
+          <simpleChoice identifier="choice_9" fixed="false" showHide="show">Edith hopes that Margaret does not show up to the meeting.</simpleChoice>
+          <simpleChoice identifier="choice_10" fixed="false" showHide="show">Edith hopes that Margaret will show up on time in the future.</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE_1"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE_1"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

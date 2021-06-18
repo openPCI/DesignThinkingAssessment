@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15374389495676244" title="A program for the Midsummer Eve" label="16. Make a program for the Midsummer's Eve" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>You are celebrating the Midsummer with a large bonfire, a buffet, community singing and more. You already decided the activities that will take place. You just need to make the program.</h4>
+        <h6>Make the program for the feast by clicking the squares next to the activities. Every square correspond to half an hour. Think about the sequence of the activities, how long they should take, and which activities that should take place at the same time.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="gantt" hook="gantt/runtime/gantt.amd.js" version="0.1.21">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+                <lib id="gantt/runtime/ganttjs/gantt"/>
+              </libraries>
+              <stylesheets>
+                <link href="gantt/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="gantt/runtime/css/gantt.css" type="text/css" title="gantt"/>
+                <link href="gantt/runtime/ganttjs/ganttjs.css" type="text/css" title="ganttjs"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="gantt/runtime/assets/download.png" type="image/png"/>
+                <file src="gantt/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="period">1</property>
+              <property key="weekDays"></property>
+              <property key="months"></property>
+              <property key="disableWeekends"></property>
+              <property key="startDate"></property>
+              <property key="useHours">true</property>
+              <property key="useHalfHours">true</property>
+              <property key="dayStart">17</property>
+              <property key="dayEnd">20</property>
+              <property key="tasks">The mayor make a speech;#F00
+The buffet is served;#0F0
+The bonfire is light up;#00f
+The bonfire is put out;#ffbf00
+Sack race for the kids;#000
+Bake bread on a stick for kids;#2ff
+Community singing;#7aa424</property>
+              <property key="showTimeRange">true</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="gantt">
+    
+</div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15350146243268104" title="5. Reply to texts" label="8. Reply to texts" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
+    <correctResponse>
+      <value><![CDATA[choice_2 choice_3]]></value>
+      <value><![CDATA[choice_1 choice_4]]></value>
+      <value><![CDATA[choice_5 choice_6]]></value>
+      <value><![CDATA[choice_1 choice_7]]></value>
+      <value><![CDATA[choice_2 choice_8]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>You have gotten a text from Oscar. Oscar auditioned for the role of the knight. He writes:<br/>
+<img src="teateropg8.png" alt="teateropg8" width="53%"/>Hi. To be completely honest, I am a little confused. At my audition this friday you said that I did a good job, and that my chances of getting the role were big. But now I find out that you have given the role to someone else. And at that, you gave the role to Peter, who everyone knows is really bad. It feels like you are trying to annoy me. Regards, Oscar</h4>
+        <h5>You can reply to Oscar in different ways. The tone is very different. Pick a description that matches every answer.</h5>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <matchInteraction responseIdentifier="RESPONSE" shuffle="false" maxAssociations="0" minAssociations="0">
+          <prompt/>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="choice_1" fixed="false" showHide="show" matchMax="5" matchMin="0">Understanding</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_2" fixed="false" showHide="show" matchMax="5" matchMin="0">Angry</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_5" fixed="false" showHide="show" matchMax="5" matchMin="0">Neutral</simpleAssociableChoice>
+          </simpleMatchSet>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="choice_3" fixed="false" showHide="show" matchMax="1" matchMin="0">Hi. What a childish behavior! I don't want to reply to that.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_4" fixed="false" showHide="show" matchMax="1" matchMin="0">Hi Oscar. We definetly did not pick Peter to annoy you. After your audition we were very enthusiastic and felt that we were going to hire you. But later when we saw Peter we decided that he was a better fit for the role. We hope to see you at an audition some other time.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_6" fixed="false" showHide="show" matchMax="1" matchMin="0">Hi Oscar. We picked Peter, since he was a better fit for the role.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_7" fixed="false" showHide="show" matchMax="1" matchMin="0">Hi Oscar. It was not on purpose if we annoyed you. You did a good job, but Peter was a better fit. We still hope to see you at an audition some other time.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_8" fixed="false" showHide="show" matchMax="1" matchMin="0">Hi Oscar. You are such a sore loser! We can guarantee you that you will never get another role in this theater again.</simpleAssociableChoice>
+          </simpleMatchSet>
+        </matchInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

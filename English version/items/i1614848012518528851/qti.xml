@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15398677589059352" title="Flettevejledning" label="4. Braiding guide" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="trin_2" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[trin2_2]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="trin2_K" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="trin_1" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[trin1_K]]></value>
+    </correctResponse>
+    <mapping defaultValue="0" upperBound="1" lowerBound="0">
+      <mapEntry mapKey="trin1_K" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="trin_3" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[trin3_K]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="trin3_K" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="3"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>3</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>The museum wants to create a workshop for the exhibit, where you can learn to braid hair. Viking men braided their beards and women braided their hair. There has to be a braiding guide, that can be hung up in the workshop. </h4>
+        <h6> There are 3 steps in the guide. You have to pick the picture, that matches every step</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="trin_1" shuffle="true" maxChoices="1" minChoices="0" orientation="horizontal">
+          <prompt>
+            <p>1. Part the hair in 5 parts, where part 1 is furthest to the right.</p>
+          </prompt>
+          <simpleChoice identifier="trin1_3" fixed="false" showHide="show">
+            <p>
+              <img src="Trin 0_3.png" alt="Trin 0_3" width="182" height="141"/>
+            </p>
+          </simpleChoice>
+          <simpleChoice identifier="trin1_K" fixed="false" showHide="show">
+            <img src="Trin 0_K (2).png" alt="Trin 0_K" width="182" height="141"/>
+          </simpleChoice>
+          <simpleChoice identifier="trin1_2" fixed="false" showHide="show">
+            <img src="Trin 0_2.png" alt="Trin 0_2" width="182" height="141"/>
+          </simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="trin_2" shuffle="true" maxChoices="1" minChoices="0" orientation="horizontal">
+          <prompt>
+            <p>2.  Put part 1 over part 2, and under part 3</p>
+          </prompt>
+          <simpleChoice identifier="trin2_K" fixed="false" showHide="show">
+            <p>
+              <img src="Trin 1_K.png" alt="Trin 1_K" width="183" height="141"/>
+            </p>
+          </simpleChoice>
+          <simpleChoice identifier="trin2_2" fixed="false" showHide="show">
+            <img src="Trin 1_2.png" alt="Trin 1_2" width="183" height="141"/>
+          </simpleChoice>
+          <simpleChoice identifier="trin2_3" fixed="false" showHide="show">
+            <img src="Trin 1_3.png" alt="Trin 1_3" width="183" height="141"/>
+          </simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="trin_3" shuffle="true" maxChoices="1" minChoices="0" orientation="horizontal">
+          <prompt>
+            <p>3. Put part 5 over part 4 and under the middle part.</p>
+          </prompt>
+          <simpleChoice identifier="trin3_K" fixed="false" showHide="show">
+            <img src="Trin 2_K.png" alt="Trin 2_K" width="182" height="141"/>
+          </simpleChoice>
+          <simpleChoice identifier="trin3_2" fixed="false" showHide="show">
+            <img src="Trin 2_2.png" alt="Trin 2_2" width="182" height="141"/>
+          </simpleChoice>
+          <simpleChoice identifier="trin3_3" fixed="false" showHide="show">
+            <img src="Trin 2_3.png" alt="Trin 2_3" width="182" height="141"/>
+          </simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <p>Continue step 2 and 3 above, until the is no more hair left. Finish with a hair tie.</p>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="trin_1"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="trin_1"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="trin_2"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="trin_2"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="trin_3"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="trin_3"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

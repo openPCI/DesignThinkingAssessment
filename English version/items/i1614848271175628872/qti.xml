@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15371759775065220" title="9. Brainstorm II" label="11. Brainstorm II" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Margaret has returned to the theater and is sad about her behavior. She has asked for your advice regarding what she should have done in the situation. You make a brainstorm with Ella and Jacob. You have to find out what other and better ways, Margaret could have reacted.</h4>
+        <h6>Write in the space below. Click "Enter" every time you have written an idea. While you are writing, you can see Ella and Jacob's ideas on the screen. Click the text in the big square, when you are ready to brainstorm. Go to the next task when you are out of ideas. You will automatically continue to the next task after 3 minutes.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">Dig</property>
+              <property key="messages">04;Ella;red;Contact Edith yourself
+09;Jacob;green;Ask someone else for help
+14;Ella;red;Ignorethe text
+19;Jacob;green;Count to ten
+24;Jacob;green;Complain to your family
+29;Ella;red;Come in on time to prove Edith wrong
+36;Ella;red;Call for a meeting with everyone
+43;Jacob;green;Contact your boss
+50;Ella;red;Ask for friends' advice
+57;Jacob;green;Apologize to everyone for not showing up on time
+64;Jacob;green;Ask the others whether they agree with Edith
+74;Jacob;green;Bake a cake for Edith
+84;Ella;red;Praise Edith for voicing her opinion
+94;Ella;red;Thank Edith for the reminder
+104;Jacob;green;Explain to Edith why the text was unpleasant to recieve
+114;Ella;red;Invite Edith out for dinner
+124;Jacob;green;Take a deep breath
+134;Jacob;green;Call your mom
+144;Ella;red;Smile more at Edith
+154;Jacob;green;Splash cold water in your face
+164;Ella;red;Come to the meeting early to talk to Edith</property>
+              <property key="timeLimit">180</property>
+              <property key="startText">Klik her, når du er klar til at brainstorme!</property>
+              <property key="endText">Tiden er gået. Gå videre til næste opgave.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

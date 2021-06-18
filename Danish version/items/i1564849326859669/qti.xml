@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15434078859242889" title="2.! Indret en souvenirbutik" label="2. Indret en souvenirbutik" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Souvenirbutikken skal have en ny indretning. Du skal lave indretningen om, så den lever op til kravene.</h4>
+        <h5>Krav:<br/>
+• Gæster skal kunne nå forbi alle typer hylder uden at gå det samme sted to gange.</h5>
+        <h6>Du skal flytte rundt på hylderne, kasseapparatet og fryseren med is, så indretningen opfylder kravet. Hylderne kan vendes om med piletasterne eller ved at dobbeltklikke på dem. Du kan zoome ind for at se nærmere på hyldernes indhold.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="theroom" hook="theroom/runtime/theroom.amd.js" version="0.0.12">
+            <resources>
+                                            <libraries><lib id="IMSGlobal/jquery_2_1_1"/></libraries><stylesheets><link href="theroom/runtime/css/base.css" type="text/css" title="base"/></stylesheets><mediaFiles><file src="theroom/runtime/assets/download.png" type="image/png"/><file src="theroom/runtime/css/img/download.png" type="image/png"/></mediaFiles></resources>
+            <properties>
+              <property key="exercise">butik.json</property>
+              <property key="gameurl">https://surveyinfo.au.dk/pci-external/open-tao-pcis/theroom/runtime/theroom.html</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="theroom">
+</div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i1540817162139419" title="7. Complaint over the children's zoo" label="7. Complaint over the children's zoo" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
+    <correctResponse>
+      <value><![CDATA[Sad leftout]]></value>
+      <value><![CDATA[Annoyed sneeze]]></value>
+      <value><![CDATA[Annoyed bored]]></value>
+      <value><![CDATA[Annoyed money]]></value>
+      <value><![CDATA[Sad involved]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="Sad leftout" mappedValue="1"/>
+      <mapEntry mapKey="Sad involved" mappedValue="1"/>
+      <mapEntry mapKey="Annoyed money" mappedValue="1"/>
+      <mapEntry mapKey="Annoyed bored" mappedValue="1"/>
+      <mapEntry mapKey="Annoyed sneeze" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="5"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>5</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Molly lives at the campsite for the fifth time. She brings her son Sam who is allergic to rabit skin. Therefore she has filed a complaint about the plans to build a children's zoo.</h4>
+        <h6>There can be many reasons for Molly's being unhappy about the new plans. You should for each reason select if this will make Molly annoyed or sad.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <matchInteraction responseIdentifier="RESPONSE" shuffle="true" maxAssociations="0" minAssociations="0">
+          <prompt/>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="Annoyed" fixed="false" showHide="show" matchMax="0" matchMin="0">Annoyed</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="Sad" fixed="false" showHide="show" matchMax="0" matchMin="0">Sad</simpleAssociableChoice>
+          </simpleMatchSet>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="leftout" fixed="false" showHide="show" matchMax="1" matchMin="0">
+              <div>Sam will feel left out because he cannot play with other children in the children's zoo.</div>
+            </simpleAssociableChoice>
+            <simpleAssociableChoice identifier="sneeze" fixed="false" showHide="show" matchMax="1" matchMin="0">The family will have to listen to Sam sneeze all the time.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="bored" fixed="false" showHide="show" matchMax="1" matchMin="0">
+              <div>Sam will be bored because he cannot play at the playground next to the children's zoo anylonger.</div>
+            </simpleAssociableChoice>
+            <simpleAssociableChoice identifier="money" fixed="false" showHide="show" matchMax="1" matchMin="0">
+              <div>Molly will have to spend many money on allergy pills for Sam.</div>
+            </simpleAssociableChoice>
+            <simpleAssociableChoice identifier="involved" fixed="false" showHide="show" matchMax="1" matchMin="0">
+              <div>Molly has been at the campsite for many years, and therefore she would like to be involved in the decisions.</div>
+            </simpleAssociableChoice>
+          </simpleMatchSet>
+        </matchInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/map_response"/>
+</assessmentItem>

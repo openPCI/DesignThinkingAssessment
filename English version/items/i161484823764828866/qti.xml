@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15434099953719907" title="2. Redesign theater hall" label="2. Redesign the theater hall" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>There has to be space for more people in the theater. You have to change the layout so there is room for four new rows of seats.</h4>
+        <h5>Requirenments:<br/>
+• The 4 new rows of seats have to be placed in the theater.<br/>
+• Carpets have to lead the visitors from the entrance to the rows.</h5>
+        <h6>You have to move the rows of chairs and insert carpets, so the layout meet the requirements. The rows of seats and carpets can be turned around with the arrow keys or by double clicking them. </h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="theroom" hook="theroom/runtime/theroom.amd.js" version="0.0.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="theroom/runtime/css/base.css" type="text/css" title="base"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="theroom/runtime/assets/download.png" type="image/png"/>
+                <file src="theroom/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="excersize">teater.json</property>
+              <property key="gameurl">https://surveyinfo.au.dk/pci-external/open-tao-pcis/theroom/runtime/theroom.html</property>
+              <property key="exercise">teater.json</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="theroom">
+</div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

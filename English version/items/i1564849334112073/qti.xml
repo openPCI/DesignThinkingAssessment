@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i155048387089462533" title="4.2 Diagram" label="4.2 Diagram" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[oldlessscary]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4><img src="figurer_forlystelsespark.png" alt="figurer_forlystelsespark" width="100%" type="image/png"/>[How scary do you think Draculas castle is on a scale from 1 to 4, where 4 is very scary?; Not scary, Little scary, Quite scary, Very Scary; 7/8/9 years] How scary do you think that Dracula's castle is on a scale from 1 to 4, where 4 is very scary?</h4>
+        <h6>What are the two figures showing?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1" minChoices="0" orientation="vertical">
+          <simpleChoice identifier="oldscary" fixed="false" showHide="show">As you get older, Dracula's castle seems more scary.</simpleChoice>
+          <simpleChoice identifier="nocorrelation" fixed="false" showHide="show">There is no correlation between age and how dangerous you think Dracula's castle is.</simpleChoice>
+          <simpleChoice identifier="oldlessscary" fixed="false" showHide="show">As you get older, Dracula's castle seems less scary.</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

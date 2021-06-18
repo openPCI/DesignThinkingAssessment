@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15433220682383776" title="2.1 Questionaire" label="3. Questionaire" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+    <mapping defaultValue="0">
+      <mapEntry mapKey="likemost" mappedValue="1"/>
+      <mapEntry mapKey="wish" mappedValue="1"/>
+      <mapEntry mapKey="ailes" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="2"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>2</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>The new store is meant for children between ages 5 and 8. You want to know, whether the children like the store. Therefore, you create a questionaire.</h4>
+        <h6>Pick two questions from the list, that you wish to use in the questionaire.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="2" minChoices="0" orientation="vertical">
+          <simpleChoice identifier="terrybear" fixed="false" showHide="show">What do you think the price for a teddy bear should be?</simpleChoice>
+          <simpleChoice identifier="difference" fixed="false" showHide="show">What is the difference between a regular store and a souvenir store?</simpleChoice>
+          <simpleChoice identifier="likemost" fixed="false" showHide="show">Which item in the store would you like to have the most?</simpleChoice>
+          <simpleChoice identifier="wish" fixed="false" showHide="show">What would you have wished to be able to buy in the store?</simpleChoice>
+          <simpleChoice identifier="icecream" fixed="false" showHide="show">Can you explain why many children like ice cream?</simpleChoice>
+          <simpleChoice identifier="candy" fixed="false" showHide="show">Why do you think that the aisle with candy is often placed close to the cashier?</simpleChoice>
+          <simpleChoice identifier="souveniers" fixed="false" showHide="show">Do you like souvenirs?</simpleChoice>
+          <simpleChoice identifier="ailes" fixed="false" showHide="show">Were you able to see all of the items in the aisles?</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/map_response"/>
+</assessmentItem>

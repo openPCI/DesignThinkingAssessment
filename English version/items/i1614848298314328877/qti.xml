@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i154738224940821883" title="0. Final page" label="0. Final page" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>All the tasks in the theater have been finished.</h4>
+        <h6>Thank you for your participation!</h6>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing/>
+</assessmentItem>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15371697227026211" title="5. Brainstorm II" label="6. Brainstorm II" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>The park is opening for the new season soon. You want to create a big opening party. The party has to both be for children and adults. The board of directors is meeting to make a brainstorm, showing different activities for the guests to do.</h4>
+        <h6>Write in the space below. Click "Enter" every time you have written an idea. While writing, you can see others' ideas on the screen. Click on the text in the big space, when you are ready for brainstorming. Go to the next task when you cannot think of anymore ideas. You automatically go to the next task after 3 minutes.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">You</property>
+              <property key="messages">04;Lara;green;a tombola
+07;Mohammed;red; soccertournament.
+12;Lara;green;a workshop, where you can draw
+17;Mohammed;red;theatrical performance
+22;Lara;green;singing together
+27;Kyle;blue;concert.
+31;Mohammed;red;free lollipops
+35;Kyle;blue;Buffet.
+41;Lara;green;an exhibition with pictures from construction of the park
+48;Kyle;blue;competetions
+55;Mohammed;red;bouncy castle for the kids
+60;Lara;green;a disco
+65;Kyle;blue;hot dog stand
+70;Mohammed;red;costumes
+75;Lara;green;dance off
+80;Kyle;blue;a lot of flags
+85;Mohammed;red;cirkus parade
+90;Kyle;blue;balloon animals
+95;Lara;green;free popsicles
+100;Kyle;blue;free t-shirts with the logo
+105;Mohammed;red;sack race
+110;Lara;green;fireworks
+115;Kyle;blue;show clips of the construction
+120;Mohammed;red;speeches
+125;Lara;green;carousel
+130;Kyle;blue;barbaque
+135;Mohammed;red;free cake
+140;Lara;green;a workshop where you can paint
+145;Mohammed;red;getting family portraits taken
+150;Kyle;blue;obstacle course
+155;Lara;green;riding a pony
+160;Kyle;blue;relay race</property>
+              <property key="timeLimit">180</property>
+              <property key="startText">Click here when you are ready to brainstorm.</property>
+              <property key="endText">Time is up. Go to next task.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

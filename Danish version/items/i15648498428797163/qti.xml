@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15432275645574722" title="12.1 Lagkagediagram" label="14.1 Lagkagediagram" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[choice_3]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_3" mappedValue="1"/>
+      <mapEntry mapKey="choice_11" mappedValue="0"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="RESPONSE_3" cardinality="single" baseType="identifier">
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_20" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="2"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>2</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Eleverne fra 3. klasse har svaret på spørgeskemaet. De har svaret på, hvilken slags teater de bedst kan lide. Sisse fra regnskab har indsat svarene i to lagkagediagrammer:<br/>
+<img src="søjlediagram_teater.png" alt="s jlediagram_teater" width="100%"/>
+<br/>
+Kig på figurerne, og vælg det rigtige svar til hvert af spørgsmålene nedenfor. </h4>
+        <div>
+          <h6>Hvilken genre kan pigerne bedst lide?     </h6>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1" minChoices="0" orientation="horizontal">
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">Opera</simpleChoice>
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">Musical</simpleChoice>
+          <simpleChoice identifier="choice_3" fixed="false" showHide="show">Eventyr</simpleChoice>
+          <simpleChoice identifier="choice_11" fixed="false" showHide="show">Komedie</simpleChoice>
+          <simpleChoice identifier="choice_12" fixed="false" showHide="show">Ballet</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <h6>Hvilken genre kan både pigerne og drengene mindst lide?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_3" shuffle="true" maxChoices="1" minChoices="0" orientation="horizontal">
+          <simpleChoice identifier="choice_16" fixed="false" showHide="show">Ballet</simpleChoice>
+          <simpleChoice identifier="choice_17" fixed="false" showHide="show">Musical</simpleChoice>
+          <simpleChoice identifier="choice_18" fixed="false" showHide="show">Komedie</simpleChoice>
+          <simpleChoice identifier="choice_19" fixed="false" showHide="show">Eventyr</simpleChoice>
+          <simpleChoice identifier="choice_20" fixed="false" showHide="show">Opera</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE_3"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE_3"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

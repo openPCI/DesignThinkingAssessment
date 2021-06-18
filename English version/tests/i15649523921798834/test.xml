@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentTest xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="Traening-E2019" title="Vejledningsmodul E2019" toolName="tao" toolVersion="3.3.0-RC02" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p1.xsd">
+  <timeLimits allowLateSubmission="false"/>
+  <testPart identifier="Testdel1" navigationMode="linear" submissionMode="individual">
+    <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+    <timeLimits allowLateSubmission="false"/>
+    <assessmentSection identifier="assessmentSection-1" required="true" fixed="false" title="Intro" visible="true" keepTogether="true">
+      <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+      <timeLimits allowLateSubmission="false"/>
+      <assessmentItemRef identifier="item-1" required="false" fixed="false" href="../../items/i15649330021885747/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-4" required="false" fixed="false" href="../../items/i15649330068073749/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-3" required="false" fixed="false" href="../../items/i15649330084128750/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-2" required="false" fixed="false" href="../../items/i15649330048745748/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+    </assessmentSection>
+    <assessmentSection identifier="tasks" required="false" fixed="false" title="Tasks" visible="true" keepTogether="true">
+      <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+      <timeLimits allowLateSubmission="false"/>
+      <assessmentItemRef identifier="item-5" required="false" fixed="false" href="../../items/i15649329933668742/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-6" required="false" fixed="false" href="../../items/i15649329953954743/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-7" required="false" fixed="false" href="../../items/i15649329978767744/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-8" required="false" fixed="false" href="../../items/i15649330013560746/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="item-9" required="false" fixed="false" href="../../items/i15649329991972745/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="false" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+    </assessmentSection>
+  </testPart>
+  <outcomeProcessing/>
+</assessmentTest>

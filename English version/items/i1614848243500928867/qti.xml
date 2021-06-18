@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15422009329915431" title="4. Prioritized list of tasks" label="4. Prioritized list of tasks" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="ordered" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[slutning]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Some tasks for the first weeks have been planned. You are scared that you do not have time for all of them. Therefore, you want to create a better overview of the different tasks' importance. </h4>
+        <h6>Click on the tasks, so they are in order on the right side of the screen. The task at the top of the list has to be the most important.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <orderInteraction responseIdentifier="RESPONSE" shuffle="true" orientation="vertical">
+          <simpleChoice identifier="slutning" fixed="false" showHide="show">Finish writing the play</simpleChoice>
+          <simpleChoice identifier="kostumer" fixed="false" showHide="show">Sew extra costumes in case one breaks</simpleChoice>
+          <simpleChoice identifier="korrektur" fixed="false" showHide="show">
+            <p>Check for spelling errors in the script</p>
+          </simpleChoice>
+          <simpleChoice identifier="audition" fixed="false" showHide="show">Get actors in for an audition</simpleChoice>
+          <simpleChoice identifier="sminkoer" fixed="false" showHide="show">Hire someone to do makeup on the actors</simpleChoice>
+          <simpleChoice identifier="garderobe" fixed="false" showHide="show">Paint the wall in the wardrobe.</simpleChoice>
+        </orderInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

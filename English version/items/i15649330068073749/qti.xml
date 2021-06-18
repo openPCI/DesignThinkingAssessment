@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i1560756825871110075" title="Full Screen" label="Full Screen" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Tasks should be viewed in full screen</h4>
+        <h5>Activating full screen is different, depending on the computer.</h5>
+        <h5>1) Try to click on F11 at the top of your keyboard. If that does not work, try to hold Fn down, while clicking on F11. Fn is in the bottom left corner of your keyboard:<br/>
+<img src="tastatur.png" alt="tastatur" width="100%"/><br/>
+<br/>
+2) If that does not work, find the icon for full screen at the top right in your browser:<br/>
+<img src="menubjælker.png" alt="menubj lker" width="100%"/></h5>
+        <h6>Ask your teacher for help if it still does not work. Click on <img src="næste.png" alt="n ste" width="9%"/> , when everyone in your class can see the page in full screen. Your teacher will say when to go. </h6>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing/>
+</assessmentItem>

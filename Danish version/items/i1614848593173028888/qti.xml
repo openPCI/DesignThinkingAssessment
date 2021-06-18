@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i156050421760589820" title="Brainstorm" label="Brainstorm" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>I denne type opgave skal du deltage i en brainstorm</h4>
+        <h5>• Du deltager i brainstormen sammen med andre. Deres idéer kommer frem løbende.<br/>
+• Der er tid på brainstormen. Den grønne bar tæller ned.<br/>
+• Skriv en idé i feltet nederst, og klik på <img src="enterK.jpg" alt="enterK" width="70" height="33"/>
+. Så kommer din idé frem i brainstormfeltet.<br/>
+• Skriv alle de idéer, du kan komme på. Klik på <img src="enterK.jpg" alt="enterK" width="70" height="33"/>
+ hver gang du finder på en idé.<br/>
+• Klik videre til næste opgave, når du ikke kan finde på flere idéer.<br/>
+• Klik på teksten i brainstormfeltet for at starte brainstormen.</h5>
+        <h6>Prøv nu at finde på idéer til, hvad der er sjovt at lave til en skolefest.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">Dig</property>
+              <property key="messages">1;Annie;red;diskotek
+3;Frede;green;fyrværkeri 
+7;Igor;#00a8a7;spis karamelbånd hurtigst
+12;Frede;green;fodbold
+17;Igor;#00a8a7;stopdans
+22;Annie;red;dåseskjul
+27;Igor;#00a8a7;æggeløb
+32;Annie;red;musik
+37;Frede;green;rundbold
+42;Annie;red;ballondans
+47;Igor;#00a8a7;natløb
+52;Frede;green;høvdingebold
+56;Annie;red;hoppeborg</property>
+              <property key="timeLimit">60</property>
+              <property key="startText">Klik her, når du er klar til at brainstorme</property>
+              <property key="endText">Tiden er gået, gå til næste opgave.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

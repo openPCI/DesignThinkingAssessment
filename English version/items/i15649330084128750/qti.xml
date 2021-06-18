@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i156076137610210185" title="zoom" label="Zoom" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>You can zoom in and out</h4>
+        <h5>If it is hard to see the task, you can try to zoom in or out:<br/>
+• Zoom in by pressing down 'Ctrl', while clicking on '+' <br/>
+• Zoom out by pressing down 'Ctrl', while clicking '-'<br/>
+<img src="tastatur zoom.jpg" alt="tastatur zoom" width="64%"/></h5>
+        <h6>Try to zoom in and out until you think it looks good. Click on <img src="næste.png" alt="n ste" width="9%"/>, when everyone in the class has tried it. Your teacher will tell you when to continue.</h6>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing/>
+</assessmentItem>

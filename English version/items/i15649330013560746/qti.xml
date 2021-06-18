@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i156050421760589820" title="Brainstorm" label="Brainstorm" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>In this type of task you have to participate in a brainstorm</h4>
+        <h5>• You participate in the brainstorm along with others. Their ideas will show up along with yours.<br/>
+• The brainstorm is timed. The green bar counts down.<br/>
+• Write an idea in the space below, and click <img src="enterK.jpg" alt="enterK" width="70" height="33"/> . Then, you will see your idea in the brainstorm space.<br/>
+• Write down all of the ideas that you can come up with. Click on <img src="enterK.jpg" alt="enterK" width="70" height="33"/> every time you come up with an idea. <br/>
+• Go on to the next task when you are out of ideas.<br/>
+• Click on the text in the brainstorm space to start the brainstorm.</h5>
+        <h6>Now, try to find out ideas for fun things to do at a party at school.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">Dig</property>
+              <property key="messages">1;Pamela;red;disco
+3;Jim;green;fireworks
+7;Dwight;#00a8a7;cake eating contest
+12;Jim;green;soccer
+17;Dwight;#00a8a7;stop dance
+22;Pamela;red;hide and seek
+27;Dwight;#00a8a7;egg and spoon race
+32;Pamela;red;music
+37;Jim;green;baseball 
+42;Pamela;red;balloon dance
+47;Dwight;#00a8a7;night racing
+52;Jim;green;dodge ball
+56;Pamela;red;bouncy house
+</property>
+              <property key="timeLimit">60</property>
+              <property key="startText">Klik her, når du er klar til at brainstorme</property>
+              <property key="endText">Tiden er gået, gå til næste opgave.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

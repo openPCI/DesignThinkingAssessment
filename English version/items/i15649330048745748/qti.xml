@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i1560756171849710070" title="Test interface" label="Test interface" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Every page consists of different areas</h4>
+        <h5>• In the top area it says what the task is about.<br/>
+• In the bottom area you can solve the task.<br/>
+• The status line at the top right shows you, how long you have come in the module. One module is a story with about 10 tasks. There can for example be tasks on a campsite.<br/>
+• The next-button at the bottom right can guide you towards the next task, when you click on it. You cannot go back. You have to be sure that you are done with the task.<br/>
+<img src="testinterface.png" alt="testinterface" width="100%"/></h5>
+        <h6>If you click on <img src="næste.png" alt="n ste" width="9%"/> now, you can try to solve a task.</h6>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing/>
+</assessmentItem>

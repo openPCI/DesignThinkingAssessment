@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i154081714885416" title="3.1: Tegning til børnezoo" label="6. Tegning til børnezoo" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[choice_1]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_1" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>I har besluttet at gå videre med Jans idé om at lave en lille børnezoo ved siden af legepladsen.</h4>
+        <h6>I skal beslutte, hvor I skal bygge på pladsen. Hvilken tegning kan bedst hjælpe dig med at planlægge det?</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1" minChoices="0" orientation="horizontal">
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">
+            <img src="assets/710e31395c2c770370f4e.jpg" alt="plan.jpg" width="170" height="227"/>
+          </simpleChoice>
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">
+            <img src="assets/39e30f995c2c770d4cb3e.jpg" alt="plakat.jpg" width="170" height="227"/>
+          </simpleChoice>
+          <simpleChoice identifier="choice_3" fixed="false" showHide="show">
+            <img src="assets/620f90225c2c770d46a55.jpg" alt="kanin.jpg" width="170" height="227"/>
+          </simpleChoice>
+          <simpleChoice identifier="choice_4" fixed="false" showHide="show">
+            <img src="assets/9cca94635c2c770d4c951.jpg" alt="bur.jpg" width="170" height="227"/>
+          </simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/map_response"/>
+</assessmentItem>

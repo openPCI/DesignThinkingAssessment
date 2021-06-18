@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15350146243268104" title="5. Svar på sms'er" label="8. Svar på sms'er" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
+    <correctResponse>
+      <value><![CDATA[choice_2 choice_3]]></value>
+      <value><![CDATA[choice_1 choice_4]]></value>
+      <value><![CDATA[choice_5 choice_6]]></value>
+      <value><![CDATA[choice_1 choice_7]]></value>
+      <value><![CDATA[choice_2 choice_8]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Du har fået en sms fra Konrad. Konrad var til audition på ridderrollen. Han skriver:<br/>
+<img src="teateropg8.png" alt="teateropg8" width="53%"/>
+<br/>
+Du kan svare Konrad på forskellige måder. Svarene er meget forskellige i tonen.</h4>
+        <h6>Vælg den beskrivelse, der passer til hvert svar.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <matchInteraction responseIdentifier="RESPONSE" shuffle="false" maxAssociations="0" minAssociations="0">
+          <prompt/>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="choice_1" fixed="false" showHide="show" matchMax="5" matchMin="0">Forstående</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_2" fixed="false" showHide="show" matchMax="5" matchMin="0">Vred</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_5" fixed="false" showHide="show" matchMax="5" matchMin="0">Neutral</simpleAssociableChoice>
+          </simpleMatchSet>
+          <simpleMatchSet>
+            <simpleAssociableChoice identifier="choice_3" fixed="false" showHide="show" matchMax="1" matchMin="0">Hej. Sikke dog en barnlig opførsel! Det gider jeg overhovedet ikke at forholde mig til.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_4" fixed="false" showHide="show" matchMax="1" matchMin="0">Hej Konrad. Vi har bestemt ikke valgt Per for at genere dig. Efter din audition var vi meget begejstrede og følte os sikre på, at det skulle være dig. Men da vi så Per lidt senere, vurderede vi, at han passede bedre til rollen. Vi håber at se dig til audition en anden gang.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_6" fixed="false" showHide="show" matchMax="1" matchMin="0">Hej Konrad. Vi valgte Per, fordi han passede bedre til rollen.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_7" fixed="false" showHide="show" matchMax="1" matchMin="0">Hej Konrad. Det var ikke vores mening at genere dig. Du gjorde det godt, men Per passede bedre. Vi håber at se dig til audition en anden gang.</simpleAssociableChoice>
+            <simpleAssociableChoice identifier="choice_8" fixed="false" showHide="show" matchMax="1" matchMin="0">Hej Konrad. Hvor er du dog en dårlig taber! Vi kan garantere dig, at du aldrig nogensinde får en rolle på dette teater igen.</simpleAssociableChoice>
+          </simpleMatchSet>
+        </matchInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

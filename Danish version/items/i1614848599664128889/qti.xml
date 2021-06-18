@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i156050133278589817" title="Gantt" label="Gantt" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>I denne type opgave skal du lave tidsplaner</h4>
+        <h5>• Hver række er en opgave eller en aktivitet. Her er det aktiviteter.<br/>
+• I den øverste række kan du se tidspunkter. Her er det klokkeslæt. I andre opgaver kan det være uger eller dage.<br/>
+• Klik på firkanterne ud for en aktivitet. Firkanterne skal svare til de tidspunkter, hvor aktiviteten skal ske.<br/>
+• Nogle aktiviteter kan ske på samme tid. Andre opgaver skal ske efter hinanden.<br/>
+• Din tidsplan kan godt starte senere end det første tispunkt. Den kan også slutte tidligere end det sidste tidspunkt.</h5>
+        <h6>Prøv nu at lave en tidsplan for skolefesten.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="gantt" hook="gantt/runtime/gantt.amd.js" version="0.1.21">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+                <lib id="gantt/runtime/ganttjs/gantt"/>
+              </libraries>
+              <stylesheets>
+                <link href="gantt/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="gantt/runtime/css/gantt.css" type="text/css" title="gantt"/>
+                <link href="gantt/runtime/ganttjs/ganttjs.css" type="text/css" title="ganttjs"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="gantt/runtime/assets/download.png" type="image/png"/>
+                <file src="gantt/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="period">1</property>
+              <property key="weekDays"></property>
+              <property key="months"></property>
+              <property key="disableWeekends"></property>
+              <property key="startDate"></property>
+              <property key="useHours">true</property>
+              <property key="useHalfHours"></property>
+              <property key="showTimeRange">true</property>
+              <property key="dayStart">16</property>
+              <property key="weekNumHack"></property>
+              <property key="dayEnd">22</property>
+              <property key="tasks">Fællesspisning;#F00
+Rundbold;#0F0
+Diskotek;#00f
+Tivoliboder;#ffff33</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="gantt">
+    
+</div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

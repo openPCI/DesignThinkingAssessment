@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15371751335245217" title="5. Brainstorm I" label="5. Brainstorm I" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Ude foran teatersalen er der en stor hal med hvide vægge, borde og stole. Her venter publikum normalt. Du vil gerne finde på idéer til, hvordan man kan gøre rummet sjovt at vente i for børn i 3. og 4. klasse. Du laver derfor en brainstorm med Lissy og Jakob fra teatret.</h4>
+        <h6>Skriv i feltet nederst. Tryk på 'Enter', hver gang du har skrevet en idé. <br/>
+Mens du skriver, kan du se Lissy og Jakobs idéer på skærmen. Klik på teksten i det store felt, når du er klar til at brainstorme. Gå videre til næste opgave, når du ikke kan komme på flere idéer. Du går automatisk videre efter 3 minutter.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">Dig</property>
+              <property key="messages">03;Lissy;red;Slikbod
+08;Jakob;green;Bløde sofaer
+14;Lissy;red;En quiz hvor man kan vinde en gratis sodavand
+19;Jakob;green;Seje plakater på væggene
+24;Lissy;red;Sælge figurer fra teaterstykket
+30;Jakob;green;Farver på væggene
+37;Jakob;green;Lave en café
+44;Lissy;red;Brætspil
+51;Jakob;green;Sælge merchandise
+58;Lissy;red;Små quizzer om teaterstykket
+65;Jakob;green;Spillemaskiner
+75;Lissy;red;Sækkestole
+85;Lissy;red;Lavalamper
+95;Jakob;green;Fællesspisning
+105;Lissy;red;Sælge dramatimer
+115;Jakob;green;Dukketeater
+125;Lissy;red;Sælge kostumer
+135;Lissy;red;Eventyroplæsning
+145;Lissy;red;Stjerner i loftet
+155;Jakob;green;Musik
+165;Jakob;green;Dansegulv
+175;Lissy;red;Prøve ridderrustning</property>
+              <property key="timeLimit">180</property>
+              <property key="startText">Klik her, når du er klar til at brainstorme!</property>
+              <property key="endText">Tiden er gået. Gå videre til næste opgave.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

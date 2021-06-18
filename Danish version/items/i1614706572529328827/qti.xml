@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15371697227026211" title="5. Brainstorm II" label="6. Brainstorm II" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Parken åbner snart igen til den nye sæson. I vil lave en stor åbningsfest. Festen skal være for både børn og voksne.<br/>
+I mødes i bestyrelsen for at lave en brainstorm over aktiviteter, som gæsterne kan lave til festen.</h4>
+        <h6>Skriv i feltet nederst. Tryk på 'Enter', hver gang du har skrevet en idé.<br/>
+Mens du skriver, kan du se de andres idéer på skærmen. Klik på teksten i det store felt, når du er klar til at brainstorme. Gå videre til næste opgave, når du ikke kan komme på flere idéer. Du går automatisk videre efter 3 minutter.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">Dig</property>
+              <property key="messages">04;Lisbeth;green;En tombola
+07;Mohammed;red; Fodboldturnering.
+12;Lisbeth;green;Et værksted, hvor man kan tegne.
+17;Mohammed;red;Teaterforestilling.
+22;Lisbeth;green;Fællessang
+27;Kaj;blue;Koncert.
+31;Mohammed;red;Gratis slikkepinde
+35;Kaj;blue;Buffet.
+41;Lisbeth;green;En udstilling med fotos fra ombygningen.
+48;Kaj;blue;Konkurrencer
+55;Mohammed;red;Hoppeborg til børnene
+60;Lisbeth;green;Diskotek
+65;Kaj;blue;Pølsevogn
+70;Mohammed;red;Mulighed for udklædning
+75;Lisbeth;green;Dansekonkurrence
+80;Kaj;blue;En masse flag
+85;Mohammed;red;Cirkusoptog
+90;Kaj;blue;Ballondyr
+95;Lisbeth;green;Gratis ispinde
+100;Kaj;blue;Gratis t-shirts med vores reklame
+105;Mohammed;red;Sækkeløb
+110;Lisbeth;green;Fyrværkeri
+115;Kaj;blue;Vise filmklip fra ombygningen
+120;Mohammed;red;Festtaler
+125;Lisbeth;green;Karrusel
+130;Kaj;blue;Grill
+135;Mohammed;red;Gratis kagemand
+140;Lisbeth;green;Et værksted hvor man kan male
+145;Mohammed;red;Få taget sit eget familiefoto
+150;Kaj;blue;Forhindringsbane
+155;Lisbeth;green;Ponyridning
+160;Kaj;blue;Stafetløb</property>
+              <property key="timeLimit">180</property>
+              <property key="startText">Klik her, når du er klar til at brainstorme.</property>
+              <property key="endText">Tiden er gået. Gå til næste opgave.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

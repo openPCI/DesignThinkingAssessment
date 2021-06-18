@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15392421532046347" title="3.1. Diagram" label="4.1 Diagram" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE_3" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[choice_17]]></value>
+      <value><![CDATA[choice_22]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_22" mappedValue="1"/>
+      <mapEntry mapKey="choice_17" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="RESPONSE_4" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[choice_19]]></value>
+      <value><![CDATA[choice_21]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_21" mappedValue="1"/>
+      <mapEntry mapKey="choice_19" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="4"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>4</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Parken har også sendt et spørgeskema ud om Draculas slot. Ca. 100 børn mellem 7 og 9 år har svaret på det. De blev spurgt om, hvor uhyggeligt de synes slottet er på en skala fra 1 til 4. 4 er meget uhyggeligt, og 1 er ikke uhyggeligt.<br/>
+Du har lavet 2 figurer. De viser begge, hvor uhyggeligt børn på 7, 8 og 9 år synes, at slottet er. Parkens ansatte har svaret på, om figurerne er lette at forstå.</h4>
+        <h6>Du skal til hver figur vælge op til 2 svar, du er enig i.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-6">
+        <choiceInteraction responseIdentifier="RESPONSE_3" shuffle="true" maxChoices="2" minChoices="0" orientation="vertical">
+          <prompt>
+            <p>
+              <img src="Forlystelsespark_kurvediagram.png" alt="Forlystelsespark_kurvediagram" width="100%"/>
+            </p>
+          </prompt>
+          <simpleChoice identifier="choice_16" fixed="false" showHide="show">Christian: "Skalaen burde være på y-aksen, ikke x-aksen."</simpleChoice>
+          <simpleChoice identifier="choice_17" fixed="false" showHide="show">Nasim: "Kurvernes farver ligner hinanden for meget."</simpleChoice>
+          <simpleChoice identifier="choice_18" fixed="false" showHide="show">Andreas: "Et lagkagediagram ville vise dataene bedre, fordi det summer til 100."</simpleChoice>
+          <simpleChoice identifier="choice_22" fixed="false" showHide="show">Lulu: "Et kurvediagram kan få læseren til at tro, at der er flere end 4 punkter på skalaen."</simpleChoice>
+          <simpleChoice identifier="choice_23" fixed="false" showHide="show">Kalle: "Man kan ikke se alle datapunkterne, grafen skal zoomes ud."</simpleChoice>
+        </choiceInteraction>
+      </div>
+      <div class="col-6">
+        <choiceInteraction responseIdentifier="RESPONSE_4" shuffle="true" maxChoices="2" minChoices="0" orientation="vertical">
+          <prompt>
+            <p>
+              <img src="Forlystelsespark_søjlediagram.png" alt="Forlystelsespark_s jlediagram" width="100%"/>
+            </p>
+          </prompt>
+          <simpleChoice identifier="choice_19" fixed="false" showHide="show">Dorthe: "Der er ikke så mange, der har svaret på spørgeskemaet. Diagrammet burde derfor vise antal, ikke procent. Eller der skulle stå, hvor mange der har besvaret spørgeskemaet i alt."</simpleChoice>
+          <simpleChoice identifier="choice_20" fixed="false" showHide="show">Kasper: "Procenterne summer ikke til 100."</simpleChoice>
+          <simpleChoice identifier="choice_21" fixed="false" showHide="show">Ida: "Hvis alle farverne var blå, men højere tal var mere mørkeblå, ville diagrammet være lettere at forstå.”</simpleChoice>
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">Kai: "Aldersgrupper er bedre at vise i et histogram.”</simpleChoice>
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">Line: "Der mangler en midterkategori på skalaen."</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE_3"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE_3"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE_4"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE_4"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15354519497381137" title="12. Questionaire for rehearsal piece" label="13. Questionaire" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_1" mappedValue="0"/>
+      <mapEntry mapKey="choice_4" mappedValue="0"/>
+      <mapEntry mapKey="choice_7" mappedValue="0"/>
+      <mapEntry mapKey="choice_6" mappedValue="1"/>
+      <mapEntry mapKey="choice_5" mappedValue="0"/>
+      <mapEntry mapKey="choice_2" mappedValue="1"/>
+      <mapEntry mapKey="choice_10" mappedValue="0"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="2"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>2</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Before the premiere, the theater is hosting a rehearsal for some students in 3rd grade. You want to hear what the students think about the piece. Therefore you create a questionaire that the students will recieve afterwards.</h4>
+        <h5>Requirenments:<br/>
+• The questions have to be relevant for the age group.<br/>
+• The questions have to give information that can be used to better the play before the premiere.</h5>
+        <h6> Pick two questions from the list that you think should be in the questionaire.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="2" minChoices="0" orientation="vertical">
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">Have you been to the theater before?</simpleChoice>
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">What could make the play more exciting?</simpleChoice>
+          <simpleChoice identifier="choice_4" fixed="false" showHide="show">What is your favorite theater piece?</simpleChoice>
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Did you like the knight theme, or do you think the play should be about something entirely different?</simpleChoice>
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">What was the most boring part of the play?</simpleChoice>
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">What genre is your favorite?</simpleChoice>
+          <simpleChoice identifier="choice_10" fixed="false" showHide="show">Do you think it is too expensive to go to the theater?</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/map_response"/>
+</assessmentItem>

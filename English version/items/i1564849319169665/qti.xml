@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15392421532046347" title="3.1. Diagram" label="4.1 Diagram" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE_3" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[similarcolors]]></value>
+      <value><![CDATA[scale]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="scale" mappedValue="1"/>
+      <mapEntry mapKey="similarcolors" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="RESPONSE_4" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[notmany]]></value>
+      <value><![CDATA[bluecolors]]></value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="bluecolors" mappedValue="1"/>
+      <mapEntry mapKey="notmany" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="4"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>4</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>The park has sent out a questionaire about Dracula's castle. About 100 children between ages 7 and 9 years old have answered. They were asked about how scary they thought the castle was, on a scale of 1 to 4. 4 is very scary, and 1 is not scary. <br/>
+You have created 2 figures. They both show how scary the children thought the castle is. The park's employees have said how easy the figures are to read.</h4>
+        <h6>Below each figure, you have to choose 2 answeres that you agree with. </h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-6">
+        <choiceInteraction responseIdentifier="RESPONSE_3" shuffle="true" maxChoices="2" minChoices="0" orientation="vertical">
+          <prompt>
+            <p>
+              <img src="Forlystelsespark_kurvediagram.png" alt="Forlystelsespark_kurvediagram" width="100%"/>
+            </p>
+          </prompt>
+          <simpleChoice identifier="scaleaxis" fixed="false" showHide="show">Christian: "The scale should be on the y-axis rather than the x-axis."</simpleChoice>
+          <simpleChoice identifier="similarcolors" fixed="false" showHide="show">Nasim: "The colors of the graphs look too similar."</simpleChoice>
+          <simpleChoice identifier="pie" fixed="false" showHide="show">André: "A pie chart would work better, since the sum will be 100"</simpleChoice>
+          <simpleChoice identifier="scale" fixed="false" showHide="show">Lulu: "A line chart can make the reader think, that there are more than 4 points on the scale."</simpleChoice>
+          <simpleChoice identifier="zoom" fixed="false" showHide="show">Cal: "You cannot see all of the data points. The graph should be zoomed out".</simpleChoice>
+        </choiceInteraction>
+      </div>
+      <div class="col-6">
+        <choiceInteraction responseIdentifier="RESPONSE_4" shuffle="true" maxChoices="2" minChoices="0" orientation="vertical">
+          <prompt>
+            <p>
+              <img src="Forlystelsespark_søjlediagram.png" alt="Forlystelsespark_s jlediagram" width="100%"/>
+            </p>
+          </prompt>
+          <simpleChoice identifier="notmany" fixed="false" showHide="show">Dorothy: There are not many people, who answered the questionaire. The diagram should therefore show the number of answers, not the percentage. Maybe the total number of participants should be shown."</simpleChoice>
+          <simpleChoice identifier="addto100" fixed="false" showHide="show">Caspar: "The percentages do not add up to 100."</simpleChoice>
+          <simpleChoice identifier="bluecolors" fixed="false" showHide="show">Ida: "If all of the colors were blue, but the color gradually got darker with larger numbers, it would be easier to understand."</simpleChoice>
+          <simpleChoice identifier="histogram" fixed="false" showHide="show">Carl: "Age groups are easier to show in a histogram."</simpleChoice>
+          <simpleChoice identifier="middlecategory" fixed="false" showHide="show">Lindsey: "The scale is missing a middle category."</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE_3"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE_3"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <not>
+          <isNull>
+            <variable identifier="RESPONSE_4"/>
+          </isNull>
+        </not>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <mapResponse identifier="RESPONSE_4"/>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

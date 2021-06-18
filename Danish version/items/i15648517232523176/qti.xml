@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15426273042695447" title="8.1 Et brev til gæsterne" label="13. Et brev til gæsterne" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+    <mapping defaultValue="0">
+      <mapEntry mapKey="choice_1" mappedValue="1"/>
+      <mapEntry mapKey="choice_2" mappedValue="0"/>
+      <mapEntry mapKey="choice_3" mappedValue="1"/>
+      <mapEntry mapKey="choice_4" mappedValue="0"/>
+      <mapEntry mapKey="choice_5" mappedValue="1"/>
+      <mapEntry mapKey="choice_6" mappedValue="1"/>
+      <mapEntry mapKey="choice_7" mappedValue="0"/>
+      <mapEntry mapKey="choice_8" mappedValue="0"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="2"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>2</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Der skal laves et brev til gæsterne på pladsen. Brevet skal fortælle om byggeriet. Du skal beslutte dig for, hvilke informationer der skal med i brevet.</h4>
+        <h6>Hvad har gæsterne behov for at få at vide om byggeriet? Vælg de 2 informationer, som du synes er vigtigst.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="false" maxChoices="2" minChoices="0" orientation="vertical">
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">Hvor lang tid byggeriet varer.</simpleChoice>
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">Hvilket firma der står bag byggeriet.</simpleChoice>
+          <simpleChoice identifier="choice_3" fixed="false" showHide="show">Hvad det er, der bliver bygget.</simpleChoice>
+          <simpleChoice identifier="choice_4" fixed="false" showHide="show">Hvor meget byggeriet koster.</simpleChoice>
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Hvornår på dagen der bliver larmet.</simpleChoice>
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Hvorfor byggeriet skal foregå i højsæsonen.</simpleChoice>
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Hvem der har besluttet, at det skal bygges.</simpleChoice>
+          <simpleChoice identifier="choice_8" fixed="false" showHide="show">Hvilke materialer der bruges til byggeriet.</simpleChoice>
+        </choiceInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/map_response"/>
+</assessmentItem>

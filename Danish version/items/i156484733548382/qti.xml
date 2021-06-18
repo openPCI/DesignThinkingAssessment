@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i153432258124241" title="1. Brainstorm" label="8. Indlevering af danefæ" xml:lang="da-DK" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>En pige fra klassen har været med sin far i skoven. Her har de ledt efter historiske genstande med metaldetektor. De har fundet en gammel guldmønt, som de nu skal aflevere til museet. Historiske genstande tilhører nemlig staten.</h4>
+        <h6>Pigen kan både have gode og dårlige følelser med at skulle aflevere genstanden. Beskriv alle de følelser, du tror pigen kan have.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <extendedTextInteraction responseIdentifier="RESPONSE" base="10" minStrings="0" format="plain">
+    </extendedTextInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

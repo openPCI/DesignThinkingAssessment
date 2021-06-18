@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15368297072149197" title="Brainstorm I" label="17. Brainstorm II" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>You are at a meeting with Jack and Jill. You have a problem. In the summer the campsite is filled with foreign turists. The rest of the year the campsite is almost empty. You want to come up with ideas about how to get more guests outside of the summer season.</h4>
+        <h6>Write in the field below. Press 'Enter' each time you have written an idea. While you write, you can see Jack and Jill's ideas on the screen. Click on the text in the large area when you are ready to begin brainstorming. Go on to the next task when you are out of ideas. The brainstorm will automatically end after 3 minutes.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">You</property>
+              <property key="messages">03;Jack;green;Slide
+08;Jill;red;Build rope swings
+13;Jack;green;Workshop where kids can paint
+18;Jill;red; Bake bread on a stick
+23;Jack;green;Puppet theater
+26;Jack;green;Children’s theater
+30;Jill;red;A velodrome
+37;Jack;green;Children’s zoo
+44;Jill;red;Waffle stand
+51;Jack;green;Children’s cinema
+57;Jill;red;Build a playhouse
+64;Jill;red;LEGO workshop
+70;Jill;red;Make your own icecream
+80;Jack;green;Ball Pool
+90;Jill;red;Bouncy Castle
+100;Jack;green;Obstacle Course
+110;Jack;green;Build a playhouse
+120;Jill;red;Make bead plates
+130;Jack;green;Workshop where you can draw
+140;Jill;red;Seesaw
+150;Jack;green;Climbing tower
+160;Jill;red;Soccer field</property>
+              <property key="timeLimit">180</property>
+              <property key="startText">Click here when you are ready to continue</property>
+              <property key="endText">Time is out. Go to next task.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:pci="http://www.imsglobal.org/xsd/portableCustomInteraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15368365587970204" title="9. E A conflict between two guests" label="15. A conflict between two guests" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>Eva and Curt live next to each other. Curt thinks Eva and her children make too much noise. Eva, on the other hand, thinks that Curt is angry all the time. Your task as a campsite manager is to come up with ideas to solve the conflict between the two guests. You are taking part in a brainstorm with Jack and Jill.<br/>
+<img src="assets/a48b7cd65c2de1110023e.jpg" alt="Billede til opg. 15 i camping.jpg" width="20%"/></h4>
+        <h6>Write in the field at the bottom. Hit 'Enter' each time you have written an idea.<br/>
+While you write, you can see Jack and Jill's ideas on the screen. Click on the text in the large area when you are ready to begin. Continue to the next task when you cannot come up with more ideas. The brainstorm will stop automatically after 3 minutes.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction" customInteractionTypeIdentifier="brainstorm" hook="brainstorm/runtime/brainstorm.amd.js" version="0.1.12">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+              </libraries>
+              <stylesheets>
+                <link href="brainstorm/runtime/css/base.css" type="text/css" title="base"/>
+                <link href="brainstorm/runtime/css/brainstorm.css" type="text/css" title="brainstorm"/>
+              </stylesheets>
+              <mediaFiles>
+                <file src="brainstorm/runtime/assets/download.png" type="image/png"/>
+                <file src="brainstorm/runtime/css/img/download.png" type="image/png"/>
+              </mediaFiles>
+            </resources>
+            <properties>
+              <property key="nickname">Dig</property>
+              <property key="messages">05;Jill;red;Make a quiet area
+10;Jack;green;Get help from an expert
+15;Jack;green;Nobody makes noise in the morning or the evening
+20;Jill;red;Move them both to a new site at the campsite
+25;Jill;red;Throw out people if they violate the rules too often
+30;Jack;green;Families with children should have their own area
+37;Jack;green;Encourage everybody to be quiet
+44;Jill;red;Ask a conflict mediator for advice
+51;Jill;red;Talk to both of them
+58;Jack;green;Single guests should have their own designated area
+65;Jill;red;Make rules for good behavior
+75;Jack;green;Encourage guests to bear with each other
+85;Jill;red;Designate a place as a place where noise is accepted
+95;Jill;red;A camp for seniors
+105;Jack;green;Offer them to share a dinner
+115;Jill;red;Make the children apologize for their behavior
+125;Jack;green;No bungle over noise</property>
+              <property key="timeLimit">180</property>
+              <property key="startText">Click here when you are ready to brainstorm</property>
+              <property key="endText">Time is out. Go to the next task.</property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="brainstorm">
+                <div class="chat"/>
+                <input class="prompt"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

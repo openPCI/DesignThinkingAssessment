@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15421986243925428" title="12. time estimate of different tasks" label="12. Estimate tasks' time" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE" cardinality="ordered" baseType="identifier">
+    <correctResponse>
+      <value><![CDATA[modeldrawing]]></value>
+      <value><![CDATA[costumes]]></value>
+      <value><![CDATA[dance]]></value>
+      <value><![CDATA[music]]></value>
+      <value><![CDATA[food]]></value>
+      <value><![CDATA[fireworks]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h4>You are scared that you will be ready for the opening ceremony. Therefore, you want to have an overview of how much time it takes to do the different tasks. </h4>
+        <h6>Click on the tasks, so they are in the proper order on the right side of the screen. The task on top has to take the most time. You can change the order.</h6>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <orderInteraction responseIdentifier="RESPONSE" shuffle="true" orientation="vertical">
+          <simpleChoice identifier="music" fixed="false" showHide="show">Book band for musical entertainment</simpleChoice>
+          <simpleChoice identifier="food" fixed="false" showHide="show">Order a buffet from the local restaurant</simpleChoice>
+          <simpleChoice identifier="fireworks" fixed="false" showHide="show">Buy fireworks</simpleChoice>
+          <simpleChoice identifier="modeldrawing" fixed="false" showHide="show">Draw a model of a new rollercoaster</simpleChoice>
+          <simpleChoice identifier="costumes" fixed="false" showHide="show">Sew a clown costume</simpleChoice>
+          <simpleChoice identifier="dance" fixed="false" showHide="show">Create a dance for the circus parade</simpleChoice>
+        </orderInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>
